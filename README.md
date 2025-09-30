@@ -23,6 +23,7 @@ Write HTML programs for all the regions identified.
 Execute the programs and publish them.
 
 # CODE
+
 urls.py
 
 from django.contrib import admin
@@ -45,6 +46,7 @@ views.py
 from django.shortcuts import render
 
 # Create your views here.
+
 def map(request):
     return render(request,"map.html")
 def rail(request):
@@ -105,7 +107,7 @@ beach.html
             about:
             Royapuram beach spot (often referred to as N4 Beach near Royapuram) is a quieter coastal stretch in northern Chennai
             , known for sea views near the Kasimedu fishing harbour. 
-F
+
         </pre></h2></center>
  
     </body>
@@ -113,6 +115,7 @@ F
 
 
 metro.html
+
 {%load static%}
 
 
@@ -137,6 +140,7 @@ metro.html
  
     </body>
 rail.html
+
 {%load static%}
 
 
@@ -161,7 +165,9 @@ rail.html
  
     </body>
 </html>
+
 theatre.html
+
 {%load static%}
 
 
@@ -210,7 +216,7 @@ rpc.html
             Revoor Padmanabha Chetty Matriculation Higher Secondary School in Rajakadai, Thiruvottiyur, Chennai,
              is a co-educational English medium school established in 1983. 
             It offers classes up to +2 with good facilities and a strong academic reputation.
- .
+ 
         </pre></h2></center>
  
     </body>
@@ -218,5 +224,13 @@ rpc.html
 
     
 # OUTPUT
+<img width="1920" height="1080" alt="Screenshot 2025-09-30 223316" src="https://github.com/user-attachments/assets/18b18eb8-7ef7-4750-be68-88beb5277bcd" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-30 223324" src="https://github.com/user-attachments/assets/086c93f8-5cb5-455d-bc18-bfba9a7db4fb" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-30 223337" src="https://github.com/user-attachments/assets/b71be8d5-1de9-4e53-8ee5-35d4e3b298af" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-30 223347" src="https://github.com/user-attachments/assets/611ff532-c462-4f32-9e03-fb8944f53643" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-30 223358" src="https://github.com/user-attachments/assets/48bb5701-8191-4d32-93b4-5937e910034c" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-30 223347" src="https://github.com/user-attachments/assets/600f5aed-b795-4fb9-825e-fe26b3db7671" />
+
+
 # RESULT
 The program for implementing image maps using HTML is executed successfully.
