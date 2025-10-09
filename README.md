@@ -26,74 +26,97 @@ Execute the programs and publish them.
 
 urls.py
 
-from django.contrib import admin
-from django.urls import path
-from map import views
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',views.map),
-    path('rail.html/',views.rail)
-    ,path('rpc.html/',views.rpc)
-    ,path('beach.html/',views.beach)
-    ,path('metro.html/',views.metro)
-    ,path('theatre.html/',views.theatre),
-]
+    from django.contrib import admin
+    from django.urls import path
+    from map import views
+    
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('',views.map),
+        path('rail.html/',views.rail)
+        ,path('rpc.html/',views.rpc)
+        ,path('beach.html/',views.beach)
+        ,path('metro.html/',views.metro)
+        ,path('theatre.html/',views.theatre),
+    ]
 
 views.py
 
 
-from django.shortcuts import render
+    from django.shortcuts import render
 
-# Create your views here.
-
-def map(request):
-    return render(request,"map.html")
-def rail(request):
-    return render (request,"rail.html")
-def rpc(request):
-    return render(request,"rpc.html")
-def metro(request):
-    return render(request,"metro.html")
-def theatre(request):
-    return render(request,"theatre.html")
-def beach(request):
-    return render(request,"beach.html")
+    def map(request):
+        return render(request,"map.html")
+    def rail(request):
+        return render (request,"rail.html")
+    def rpc(request):
+        return render(request,"rpc.html")
+    def metro(request):
+        return render(request,"metro.html")
+    def theatre(request):
+        return render(request,"theatre.html")
+    def beach(request):
+        return render(request,"beach.html")
 
 map.html
 
 
-{% load static %}
-<title>Tvt map</title>
-<body>
-    <center><h1>Balaji T(25005672)</h1></center>
-<img src="{% static 'map.png' %}" usemap="#image-map" border=5px>
-
-<map name="image-map">
-    <area shape="rect" coords="383,393,576,442" alt="Odeon Mani Theatre" href="theatre.html">
-    <area shape="rect" coords="572,558,771,612" alt="Rpc school" href="rpc.html">
-    <area shape="rect" coords="1207,404,1407,449" alt="Beach hangout spot" href="beach.html">
-    <area shape="rect" coords="950,38,1102,98" alt="Theradi Metro" href="metro.html">
-    <area shape="rect" coords="496,57,623,94" alt="Tvt railway" href="rail.html">
-    <area shape="rect" coords="757,400,725,398" alt="Vijay " href="">
-    <area shape="rect" coords="717,202,686,206" alt="Stalkspot" href="">
-    <area shape="rect" coords="846,251,818,252" alt="house of coding god" href="">
-    <area shape="rect" coords="947,363,917,362" alt="Our lady" href="">
-    <area shape="rect" coords="775,580,749,579" alt="Sharmila" href="">
-    <area shape="rect" coords="456,656,429,657" alt="F1 tharkuri lives here" href="">
-</map>
-</body>
+    {% load static %}
+    <title>Tvt map</title>
+    <body>
+        <center><h1>Balaji T(25005672)</h1></center>
+    <img src="{% static 'map.png' %}" usemap="#image-map" border=5px>
+    
+    <map name="image-map">
+        <area shape="rect" coords="383,393,576,442" alt="Odeon Mani Theatre" href="theatre.html">
+        <area shape="rect" coords="572,558,771,612" alt="Rpc school" href="rpc.html">
+        <area shape="rect" coords="1207,404,1407,449" alt="Beach hangout spot" href="beach.html">
+        <area shape="rect" coords="950,38,1102,98" alt="Theradi Metro" href="metro.html">
+        <area shape="rect" coords="496,57,623,94" alt="Tvt railway" href="rail.html">
+        <area shape="rect" coords="757,400,725,398" alt="Vijay " href="">
+        <area shape="rect" coords="717,202,686,206" alt="Stalkspot" href="">
+        <area shape="rect" coords="846,251,818,252" alt="house of coding god" href="">
+        <area shape="rect" coords="947,363,917,362" alt="Our lady" href="">
+        <area shape="rect" coords="775,580,749,579" alt="Sharmila" href="">
+        <area shape="rect" coords="456,656,429,657" alt="F1 tharkuri lives here" href="">
+    </map>
+    </body>
 
 
 beach.html
 
-{%load static%}
+
+    {%load static%}
 
 
-<html>
-    <head>
-        <title>Theradi Metro</title>
-    </head>
+    <html>
+        <head>
+            <title>Theradi Metro</title>
+        </head>
+
+    <body style="background:linear-gradient(30deg,pink,blue)">
+        <img src="{%static 'beach.png'%}" width="" height="50%" border=5px style="margin-left:auto;margin-right:auto;display:block"> 
+        <center>
+        <h1>Royapuram Rock Beach</h1> 
+        <h2 align=left>
+        <pre>
+            Type:Tourist Spot
+            address:toyapuram_beach, Tiruvottiyur, Chennai, Tamil Nadu 600019
+            website: -
+            about:
+            Royapuram beach spot (often referred to as N4 Beach near Royapuram) is a quieter coastal stretch in northern Chennai
+            , known for sea views near the Kasimedu fishing harbour. 
+    </pre></h2></center>
+ 
+    </body>
+    </html>
+
+metro.html
+
+    <html>
+        <head>
+            <title>Theradi Metro</title>
+        </head>
 
     <body style="background:linear-gradient(30deg,pink,blue)">
         <img src="{%static 'beach.png'%}" width="" height="50%" border=5px style="margin-left:auto;margin-right:auto;display:block"> 
