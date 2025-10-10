@@ -73,12 +73,7 @@ map.html
         <area shape="rect" coords="1207,404,1407,449" alt="Beach hangout spot" href="beach.html">
         <area shape="rect" coords="950,38,1102,98" alt="Theradi Metro" href="metro.html">
         <area shape="rect" coords="496,57,623,94" alt="Tvt railway" href="rail.html">
-        <area shape="rect" coords="757,400,725,398" alt="Vijay " href="">
-        <area shape="rect" coords="717,202,686,206" alt="Stalkspot" href="">
-        <area shape="rect" coords="846,251,818,252" alt="house of coding god" href="">
-        <area shape="rect" coords="947,363,917,362" alt="Our lady" href="">
-        <area shape="rect" coords="775,580,749,579" alt="Sharmila" href="">
-        <area shape="rect" coords="456,656,429,657" alt="F1 tharkuri lives here" href="">
+        
     </map>
     </body>
 
